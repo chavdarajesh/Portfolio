@@ -73,6 +73,7 @@ body{
     display: block;
 }
 #particles{
+    z-index: 2;
     position: absolute;
     top: 0;
     left: 0;
@@ -227,11 +228,11 @@ body{
     float: right;
 }
 .header-image{
-    float: right;
+    float: left;
     height: auto;
     background-size: cover;
     background-position: center;
-    width: 40%;   
+    width: 25%;   
     height: 100vh;
 
 }
