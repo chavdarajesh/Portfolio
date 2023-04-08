@@ -15,7 +15,9 @@
     <!--main css file should not be removed -->
     <link rel="stylesheet" href="css/index.css">
     <!--main css file-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js"></script>
+    <script src="/js/gsap.min.js"></script>
+    <link rel="manifest" href="manifest.json">
+    <link rel="apple-touch-icon" href="images/man.jpg">
 </head>
 
 <body>
@@ -39,7 +41,7 @@
         <!--Navigator-fullscreen-->
         <div id="navigation-content">
             <div class="logo">
-                <img src="images/willy wonka logo.png" alt="logo">
+                <img src="images/willy_wonka_logo.png" alt="logo">
             </div>
             <div class="navigation-close">
                 <span class="close-first"></span>
@@ -57,7 +59,7 @@
         <!--Home Page-->
         <!--Menubar-->
         <div id="navigation-bar">
-            <img src="images/willy wonka logo.png" alt="logo">
+            <img src="images/willy_wonka_logo.png" alt="logo">
             <div class="menubar">
                 <span class="first-span"></span>
                 <span class="second-span"></span>
@@ -69,10 +71,10 @@
         <div id="header">
             <div id="particles"></div>
             <div class="social-media-links">
-                <a href="#"><img src="images/instagram logo.png" class="social-media" alt="instagram-logo"></a><!--Your instagram homepage link inser in place of "#"-->
-                 <a href="#"><img src="images/facebook logo.png" class="social-media" alt="facebook-logo"></a>
-                 <a href="#"><img src="images/linkedin logo.png" class="social-media" alt="linkedin-logo"></a>
-                 <a href="#"><img src="images/twitter logo.png" class="social-media" alt="twitter-logo"></a>
+                <a href="#"><img src="images/instagram_logo.png" class="social-media" alt="instagram-logo"></a><!--Your instagram homepage link inser in place of "#"-->
+                 <a href="#"><img src="images/facebook_logo.png" class="social-media" alt="facebook-logo"></a>
+                 <a href="#"><img src="images/linkedin_logo.png" class="social-media" alt="linkedin-logo"></a>
+                 <a href="#"><img src="images/twitter_logo.png" class="social-media" alt="twitter-logo"></a>
                  <a href="Mailto:#"><img src="images/mail.png" alt="email-pic" class="social-media"></a>
                  <!--Your email Id write in place of "#"-->
                  <a href="Tel:#"><img src="images/call.png" alt="phone-pic" class="social-media"></a>
@@ -94,11 +96,11 @@
                     </div>
                     <!--Social Media Links-->
                     <div class="contact">
-                        <a href="#"><img src="images/instagram logo.png" class="contactpic" alt="instagram-logo"></a>
+                        <a href="#"><img src="images/instagram_logo.png" class="contactpic" alt="instagram-logo"></a>
                         <!--Your instagram homepage link inser in place of "#"-->
-                        <a href="#"><img src="images/facebook logo.png" class="contactpic" alt="facebook-logo"></a>
-                        <a href="#"><img src="images/linkedin logo.png" class="contactpic" alt="linkedin-logo"></a>
-                        <a href="#"><img src="images/twitter logo.png" class="contactpic" alt="twitter-logo"></a>
+                        <a href="#"><img src="images/facebook_logo.png" class="contactpic" alt="facebook-logo"></a>
+                        <a href="#"><img src="images/linkedin_logo.png" class="contactpic" alt="linkedin-logo"></a>
+                        <a href="#"><img src="images/twitter_logo.png" class="contactpic" alt="twitter-logo"></a>
                         <a href="Mailto:#"><img src="images/mail.png" alt="email-pic" class="contactpic"></a>
                         <!--Your email Id write in place of "#"-->
                         <a href="Tel:#"><img src="images/call.png" alt="phone-pic" class="contactpic"></a>
@@ -411,11 +413,9 @@
                         <img src="images/portfolio-second.jpg" alt="portfolio-second">
                     </div>
                     <div class="portfolio-text">
-                        <h2>Web Designing</h2>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id cumque placeat minima ad
-                            laudantium suscipit
-                            voluptatem ducimus. Id cumque placeat minima ad laudantium suscipit voluptatem ducimus</p>
-                        <div class="button"><a href="#"><button><span class="index"> View Project<i
+                        <h2>Calculator Online</h2>
+                        <p>Online calculator for quick calculations, along with a large collection of calculators on math, finance, fitness, and more, each with in-depth information.</p>
+                        <div class="button"><a target="_blank" href="https://chavdarajesh.github.io/OCAL/"><button><span class="index"> View Project<i
                                             class="gg-arrow-right"></i></span></button></a></div>
                     </div>
                 </div>
@@ -425,11 +425,9 @@
                         <img src="images/portfolio-third.jpg" alt="portfolio-third">
                     </div>
                     <div class="portfolio-text">
-                        <h2>UI Designing</h2>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad ut optio repellat cupiditate
-                            expedita eius dignissimos
-                            .. Id cumque placeat minima ad laudantium suscipit voluptatem ducimus</p>
-                        <div class="button"><a href="#"><button><span class="index"> View Project<i
+                        <h2>Internet Speed Test</h2>
+                        <p>Check your Internet speed in under 30 seconds. The speed test usually transfers less than 40 MB of data, but may transfer more data on fast connections.</p>
+                        <div class="button"><a target="_blank" href="https://chavdarajesh.github.io/INST/"><button><span class="index"> View Project<i
                                             class="gg-arrow-right"></i></span></button></a></div>
                     </div>
                 </div>
@@ -694,6 +692,7 @@
         <!--contact end-->
     </div>
     <!--all the divisions-->
+    <script src="js/pwa.js"></script>
     <script src="js/jquery.min.js"></script>
     <script src="js/particles.js"></script>
     <script src="js/particles.min.js"></script>
