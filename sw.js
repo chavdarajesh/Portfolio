@@ -75,6 +75,7 @@ self.addEventListener("install", (event) => {
         './css/woff2/pxiByp8kv8JHgFVrLGT9Z1JlFc-K.woff2',
         './css/woff2/pxiByp8kv8JHgFVrLGT9Z1xlFQ.woff2',
         './css/woff2/pxiByp8kv8JHgFVrLGT9Z11lFc-K.woff2',
+        './pdf/RajeshChavda.pdf',
     ];
 
     console.log(
