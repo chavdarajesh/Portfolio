@@ -2572,3 +2572,36 @@ for tabs and large phones
     transition: all 0.4s ease;
   }
 }
+
+/* Custom css */
+/* css for internet status popup */
+.toast-notification {
+    min-width: 150px;
+    height: auto;
+    max-height: 30px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    top: 5px;
+    right: 5px;
+    position: fixed;
+    z-index: 5;
+    display: flex;
+    flex-direction: row;
+}
+
+.message-container {
+    width: 100%;
+    padding: 5px;
+    font-family: 'Roboto';
+    color: white;
+}
+
+.close-button:after {
+    padding: 5px;
+    font-weight: 900;
+    color: white;
+    cursor: pointer;
+    display: inline-block;
+    content: "\00d7";
+}

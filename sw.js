@@ -63,7 +63,7 @@ self.addEventListener("install", (event) => {
         './images/post-six.jpg',
         './images/post-three.jpg',
         './images/post-two.jpg',
-        './images/thumbnail.PNG',
+        './images/thumbnail.png',
         './images/twitter_logo.png',
         './images/willy_wonka_logo.png',
         './css/woff2/1Ptxg8zYS_SKggPN4iEgvnHyvveLxVuEorCFPrEHJA.woff2',
