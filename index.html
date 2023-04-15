@@ -13,7 +13,29 @@
     <link rel="icon" type="image/png" href="./images/favicon.png">
     <!--favicon-img-->
     <!--main css file should not be removed -->
-    <link rel="stylesheet" href="./css/index.css">
+    <!-- <link rel="stylesheet" href="./css/index.css"> -->
+    <script>
+        const ThemeColourCookieValue = document.cookie
+            .split("; ")
+            .find((row) => row.startsWith("theme_colour="))
+            ?.split("=")[1];
+        if (ThemeColourCookieValue) {
+            let colour_link = document.createElement('link');
+            colour_link.href = 'css/index.css';
+            colour_link.rel = 'stylesheet';
+            document.getElementsByTagName('head')[0].appendChild(colour_link);
+            let index_css_link = document.createElement('link');
+            index_css_link.href = 'css/' + ThemeColourCookieValue + '.css';
+            index_css_link.rel = 'stylesheet';
+            document.getElementsByTagName('head')[0].appendChild(index_css_link);
+        } else {
+            document.cookie = "theme_colour=color-blue; path=/;secure";
+            let index_css_link = document.createElement('link');
+            index_css_link.href = 'css/index.css';
+            index_css_link.rel = 'stylesheet';
+            document.getElementsByTagName('head')[0].appendChild(index_css_link);
+        }
+    </script>
     <!--main css file-->
     <script src="./js/gsap.min.js"></script>
     <link rel="manifest" href="./manifest.json">
