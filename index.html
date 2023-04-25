@@ -15,21 +15,18 @@
     <!--main css file should not be removed -->
     <!-- <link rel="stylesheet" href="./css/index.css"> -->
     <script>
-        const ThemeColourCookieValue = document.cookie
-            .split("; ")
-            .find((row) => row.startsWith("theme_colour="))
-            ?.split("=")[1];
-        if (ThemeColourCookieValue) {
+        const ThemeColourLocalStorageValue = localStorage.getItem("theme_colour");
+        if (ThemeColourLocalStorageValue) {
             let colour_link = document.createElement('link');
             colour_link.href = 'css/index.css';
             colour_link.rel = 'stylesheet';
             document.getElementsByTagName('head')[0].appendChild(colour_link);
             let index_css_link = document.createElement('link');
-            index_css_link.href = 'css/' + ThemeColourCookieValue + '.css';
+            index_css_link.href = 'css/' + ThemeColourLocalStorageValue + '.css';
             index_css_link.rel = 'stylesheet';
             document.getElementsByTagName('head')[0].appendChild(index_css_link);
         } else {
-            document.cookie = "theme_colour=color-blue; path=/;secure";
+            localStorage.setItem("theme_colour", 'color-blue');
             let index_css_link = document.createElement('link');
             index_css_link.href = 'css/index.css';
             index_css_link.rel = 'stylesheet';

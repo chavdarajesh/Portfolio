@@ -15,7 +15,7 @@ $(function () {
   $(".colors a").on("click", function (e) {
     e.preventDefault();
     var attr = $(this).attr("title");
-    document.cookie = "theme_colour=" + attr + "; path=/;secure";
+    localStorage.setItem("theme_colour", attr);
     $("head").append('<link rel="stylesheet" href="css/' + attr + '.css">');
   });
 });
