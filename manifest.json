@@ -18,5 +18,65 @@
             "sizes": "512x512",
             "type": "image/png"
         }
+    ],
+    "shortcuts": [
+        {
+            "name": "Home",
+            "url": "/",
+            "description": "Home Page",
+            "icons": [
+                {
+                    "src": "./images/coding.png",
+                    "sizes": "192x192"
+                }
+            ]
+        },
+        {
+            "name": "About",
+            "description": "About Rajesh Chavda",
+            "url": "/?url=about-link",
+            "icons": [
+                {
+                    "src": "./images/thumbnail.png",
+                    "sizes": "192x192"
+                }
+            ]
+        },
+        {
+            "name": "Blogs",
+            "short_name": "Blogs",
+            "description": "Blogs created by Rajesh Chavda",
+            "url": "/?url=blog-link",
+            "icons": [
+                {
+                    "src": "./images/bulb.png",
+                    "sizes": "192x192"
+                }
+            ]
+        },
+        {
+            "name": "Portfolio",
+            "short_name": "Portfolio",
+            "description": "Rajesh Chavda's Portfolio",
+            "url": "/?url=portfolio-link",
+            "icons": [
+                {
+                    "src": "./images/icon-name.png",
+                    "sizes": "192x192"
+                }
+            ]
+        },
+        {
+            "name": "Contact",
+            "short_name": "Contact",
+            "description": "Contact to Rajesh Chavda",
+            "url": "/?url=contact-link",
+            "icons": [
+                {
+                    "src": "./images/icon-phone.png",
+                    "sizes": "192x192"
+                }
+            ]
+        }
     ]
 }
