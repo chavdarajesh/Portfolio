@@ -34,7 +34,7 @@
         {
             "name": "About",
             "description": "About Rajesh Chavda",
-            "url": "/?url=about-link",
+            "url": "./?url=about-link",
             "icons": [
                 {
                     "src": "./images/manifest/icon-96x96.png",
