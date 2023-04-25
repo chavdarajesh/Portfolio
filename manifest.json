@@ -44,7 +44,7 @@
             "url": "/?url=about-link",
             "icons": [
                 {
-                    "src": "./images/manifest/bulb-icon.svg",
+                    "src": "./images/manifest/email-icon.svg",
                     "sizes": "96x96",
                     "type": "image/svg+xml"
                 }
@@ -57,7 +57,7 @@
             "url": "/?url=blog-link",
             "icons": [
                 {
-                    "src": "./images/manifest/email-icon.svg",
+                    "src": "./images/manifest/bulb-icon.svg",
                     "sizes": "96x96",
                     "type": "image/svg+xml"
                 }
@@ -83,7 +83,7 @@
             "url": "/?url=contact-link",
             "icons": [
                 {
-                    "src": "./images/manifest/email-icon.svg",
+                    "src": "./images/manifest/contact-icon.svg",
                     "sizes": "96x96",
                     "type": "image/svg+xml"
                 }
