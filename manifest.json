@@ -1,12 +1,19 @@
 {
     "name": "Chavda Rajesh",
     "short_name": "Chavda Rajesh Portfolio",
+    "description": "Chavda Rajesh Persnol Portfolio",
     "theme_color": "#FFFFFF",
     "background_color": "#000",
-    "start_url": ".",
+    "start_url": "/",
+    "id": "/",
     "display": "standalone",
     "orientation": "portrait",
     "icons": [
+        {
+            "src": "/images/manifest/icon-512x512.svg",
+            "type": "image/svg+xml",
+            "sizes": "512x512"
+        },
         {
             "src": "./images/manifest/icon-192x192.png",
             "sizes": "192x192",
@@ -16,6 +23,12 @@
             "src": "./images/manifest/icon-512x512.png",
             "sizes": "512x512",
             "type": "image/png"
+        },
+        {
+            "src": "./images/RC_Logo_Black.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "maskable"
         }
     ],
     "shortcuts": [
@@ -25,21 +38,21 @@
             "description": "Home Page",
             "icons": [
                 {
-                    "src": "./images/manifest/icon-96x96.png",
-                    "sizes": "96X96",
-                    "type": "image/png"
+                    "src": "./images/manifest/home-icon.svg",
+                    "sizes": "96x96",
+                    "type": "image/svg+xml"
                 }
             ]
         },
         {
             "name": "About",
             "description": "About Rajesh Chavda",
-            "url": "./?url=about-link",
+            "url": "/?url=about-link",
             "icons": [
                 {
-                    "src": "./images/manifest/icon-96x96.png",
-                    "sizes": "96X96",
-                    "type": "image/png"
+                    "src": "./images/manifest/bulb-icon.svg",
+                    "sizes": "96x96",
+                    "type": "image/svg+xml"
                 }
             ]
         },
@@ -50,9 +63,9 @@
             "url": "/?url=blog-link",
             "icons": [
                 {
-                    "src": "./images/manifest/icon-96x96.png",
-                    "sizes": "96X96",
-                    "type": "image/png"
+                    "src": "./images/manifest/email-icon.svg",
+                    "sizes": "96x96",
+                    "type": "image/svg+xml"
                 }
             ]
         },
@@ -63,9 +76,9 @@
             "url": "/?url=portfolio-link",
             "icons": [
                 {
-                    "src": "./images/manifest/icon-96x96.png",
-                    "sizes": "96X96",
-                    "type": "image/png"
+                    "src": "./images/manifest/port-icon.svg",
+                    "sizes": "96x96",
+                    "type": "image/svg+xml"
                 }
             ]
         },
@@ -76,11 +89,69 @@
             "url": "/?url=contact-link",
             "icons": [
                 {
-                    "src": "./images/manifest/icon-96x96.png",
-                    "sizes": "96X96",
-                    "type": "image/png"
+                    "src": "./images/manifest/email-icon.svg",
+                    "sizes": "96x96",
+                    "type": "image/svg+xml"
                 }
             ]
+        }
+    ],
+    "screenshots": [
+        {
+            "src": "./images/manifest/SSw1.png",
+            "sizes": "1000x600",
+            "type": "image/png",
+            "form_factor": "wide",
+            "label": "I'm a Freelancer"
+        },
+        {
+            "src": "./images/manifest/SSw2.png",
+            "sizes": "1000x600",
+            "type": "image/png",
+            "form_factor": "wide",
+            "label": "I'm a Web Developer"
+        },
+        {
+            "src": "./images/manifest/SSw3.png",
+            "sizes": "1000x600",
+            "type": "image/png",
+            "form_factor": "wide",
+            "label": "I'm a Web Designer"
+        },
+        {
+            "src": "./images/manifest/SSw4.png",
+            "sizes": "1000x600",
+            "type": "image/png",
+            "form_factor": "wide",
+            "label": "I'm a Blogger"
+        },
+        {
+            "src": "./images/manifest/SSn1.png",
+            "sizes": "450x800",
+            "type": "image/png",
+            "form_factor": "wide",
+            "label": "I'm a Freelancer"
+        },
+        {
+            "src": "./images/manifest/SSn2.png",
+            "sizes": "450x800",
+            "type": "image/png",
+            "form_factor": "wide",
+            "label": "I'm a Web Developer"
+        },
+        {
+            "src": "./images/manifest/SSn3.png",
+            "sizes": "450x800",
+            "type": "image/png",
+            "form_factor": "wide",
+            "label": "I'm a Web Designer"
+        },
+        {
+            "src": "./images/manifest/SSn4.png",
+            "sizes": "450x800",
+            "type": "image/png",
+            "form_factor": "narrow",
+            "label": "I'm a Blogger"
         }
     ]
 }
