@@ -9,7 +9,6 @@ $(window).on("load", function () {
     gsap.to("#navigation-content", 0, { display: "none" });
     gsap.to("#navigation-content", 0, { display: "flex" });
     $(document).ready(function () {
-      console.log('-----', params);
       $(`#${params.url}`).trigger("click");
     });
   } else {
