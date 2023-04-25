@@ -1,10 +1,23 @@
 $(window).on("load", function () {
   gsap.to("#loader", 1, { y: "-100%" });
   gsap.to("#loader", 1, { opacity: 0 });
-  gsap.to("#loader", 0, { display: "none", delay: 1 });
-  gsap.to("#header", 0, { display: "block", delay: 1 });
-  gsap.to("#navigation-content", 0, { display: "none" });
-  gsap.to("#navigation-content", 0, { display: "flex", delay: 1 });
+  const urlSearchParams = new URLSearchParams(window.location.search);
+  const params = Object.fromEntries(urlSearchParams.entries());
+  if (params && params.url) {
+    gsap.to("#loader", 0, { display: "none" });
+    gsap.to("#header", 0, { display: "block" });
+    gsap.to("#navigation-content", 0, { display: "none" });
+    gsap.to("#navigation-content", 0, { display: "flex" });
+    $(document).ready(function () {
+      console.log('-----', params);
+      $(`#${params.url}`).trigger("click");
+    });
+  } else {
+    gsap.to("#loader", 0, { display: "none", delay: 1 });
+    gsap.to("#header", 0, { display: "block", delay: 1 });
+    gsap.to("#navigation-content", 0, { display: "none" });
+    gsap.to("#navigation-content", 0, { display: "flex", delay: 1 });
+  }
 });
 $(function () {
   $(".color-panel").on("click", function (e) {
@@ -15,7 +28,7 @@ $(function () {
   $(".colors a").on("click", function (e) {
     e.preventDefault();
     var attr = $(this).attr("title");
-    document.cookie = "theme_colour=" + attr + "; path=/;secure";
+    localStorage.setItem("theme_colour", attr);
     $("head").append('<link rel="stylesheet" href="css/' + attr + '.css">');
   });
 });
