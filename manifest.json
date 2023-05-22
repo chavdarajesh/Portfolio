@@ -4,7 +4,7 @@
     "description": "Chavda Rajesh Persnol Portfolio",
     "theme_color": "#FFFFFF",
     "background_color": "#000",
-    "start_url": "/",
+    "start_url": ".",
     "id": "/",
     "display": "standalone",
     "orientation": "portrait",
