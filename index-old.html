@@ -1,0 +1,984 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Chavda Rajesh - Personal Portfolio" />
+    <meta name="keywords"
+        content="blog, business card, creative, creative portfolio, cv , online resume, personal, portfolio, professional cv, responsive portfolio, resume, resume , vcard" />
+    <meta name="author" content="Chavda Rajesh" />
+    <meta name="theme-color" content="#FFFFFF" />
+    <meta name="apple-mobile-web-app-title" content="Chavda Rajesh">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>Chavda Rajesh - Personal Portfolio Website </title>
+    <!--favicon-img-->
+    <link rel="icon" type="image/ico" href="./images/favicon/favicon.ico">
+    <!--favicon-img-->
+    <!--main css file should not be removed -->
+    <!-- <link rel="stylesheet" href="./css/index.css"> -->
+    <script>
+        const ThemeColourLocalStorageValue = localStorage.getItem("theme_colour");
+        if (ThemeColourLocalStorageValue) {
+            let colour_link = document.createElement('link');
+            colour_link.href = 'css/index.css';
+            colour_link.rel = 'stylesheet';
+            document.getElementsByTagName('head')[0].appendChild(colour_link);
+            let index_css_link = document.createElement('link');
+            index_css_link.href = 'css/' + ThemeColourLocalStorageValue + '.css';
+            index_css_link.rel = 'stylesheet';
+            document.getElementsByTagName('head')[0].appendChild(index_css_link);
+        } else {
+            localStorage.setItem("theme_colour", 'color-blue');
+            let index_css_link = document.createElement('link');
+            index_css_link.href = 'css/index.css';
+            index_css_link.rel = 'stylesheet';
+            document.getElementsByTagName('head')[0].appendChild(index_css_link);
+        }
+    </script>
+    <!--main css file-->
+    <script src="./js/gsap.min.js"></script>
+    <link rel="manifest" href="./manifest.json">
+    <link rel="apple-touch-icon" href="./images/manifest/main.png">
+</head>
+
+<body>
+    <!--contains all the div-->
+    <div id="all">
+        <!--mouse  follower-->
+        <div class="cursor"></div>
+        <!--mouse  follower-->
+        <!--loader-->
+        <div id="loader">
+            <span class="color">Chavda </span>Rajesh
+        </div>
+        <!--loader-end-->
+        <!--link-screen-->
+        <div id="breaker">
+        </div>
+        <div id="breaker-two">
+        </div>
+        <!--link-screen-->
+        <!--Main-Section-->
+        <!--Navigator-fullscreen-->
+        <div id="navigation-content">
+            <div class="logo">
+                <img src="./images/RC_Logo_White.png" alt="logo">
+            </div>
+            <div class="navigation-close">
+                <span class="close-first"></span>
+                <span class="close-second"></span>
+            </div>
+            <div class="navigation-links">
+                <a href="#" data-text="HOME" id="home-link">HOME</a>
+                <a href="#" data-text="ABOUT" id="about-link">ABOUT</a>
+                <a href="#" data-text="BLOG" id="blog-link">BLOG</a>
+                <a href="#" data-text="PORTFOLIO" id="portfolio-link">PORTFOLIO</a>
+                <a href="#" data-text="CONTACT" id="contact-link">CONTACT</a>
+            </div>
+        </div>
+        <!--Navigator-Fullscreen END-->
+        <!--Home Page-->
+        <!--Menubar-->
+        <div id="navigation-bar">
+            <img src="./images/RC_Logo_White.png" alt="logo">
+            <div class="menubar">
+                <span class="first-span"></span>
+                <span class="second-span"></span>
+                <span class="third-span"></span>
+            </div>
+        </div>
+        <!--Menubar End-->
+        <!--Header-->
+        <div id="header">
+            <div id="particles"></div>
+            <div class="social-media-links">
+                <a href="#"><img src="./images/instagram_logo.png" class="social-media" alt="instagram-logo"></a><!--Your instagram homepage link inser in place of "#"-->
+                 <a href="#"><img src="./images/facebook_logo.png" class="social-media" alt="facebook-logo"></a>
+                 <a href="#"><img src="./images/linkedin_logo.png" class="social-media" alt="linkedin-logo"></a>
+                 <a href="#"><img src="./images/twitter_logo.png" class="social-media" alt="twitter-logo"></a>
+                 <a href="Mailto:#"><img src="./images/mail.png" alt="email-pic" class="social-media"></a>
+                 <!--Your email Id write in place of "#"-->
+                 <a href="Tel:#"><img src="./images/call.png" alt="phone-pic" class="social-media"></a>
+             </div>
+            <!--header image-->
+            <div class="header-image">
+                <img src="./images/man.jpg" alt="logo">
+            </div>
+            <!--header image end-->
+
+            <div class="header-content">
+                <div class="header-content-box">
+                    <div class="firstline"><span class="color">Chavda </span>Rajesh</div>
+                    <div class="secondline">
+                        I'm a
+                        <span class="txt-rotate color" data-period="1200"
+                            data-rotate='[ " Web Designer.", " Blogger.", " Freelancer.", " Web Developer." ]'></span>
+                        <span class="slash">|</span>
+                    </div>
+                    <!--Social Media Links-->
+                    <div class="contact">
+                        <a href="#"><img src="./images/instagram_logo.png" class="contactpic" alt="instagram-logo"></a>
+                        <!--Your instagram homepage link inser in place of "#"-->
+                        <a href="#"><img src="./images/facebook_logo.png" class="contactpic" alt="facebook-logo"></a>
+                        <a href="#"><img src="./images/linkedin_logo.png" class="contactpic" alt="linkedin-logo"></a>
+                        <a href="#"><img src="./images/twitter_logo.png" class="contactpic" alt="twitter-logo"></a>
+                        <a href="Mailto:#"><img src="./images/mail.png" alt="email-pic" class="contactpic"></a>
+                        <!--Your email Id write in place of "#"-->
+                        <a href="Tel:#"><img src="./images/call.png" alt="phone-pic" class="contactpic"></a>
+                        <!--Your telephone number Id write in place of "#"-->
+                    </div>
+                    <!--Social Media Links end-->
+                </div>
+            </div>
+
+        </div>
+        <!--Header End-->
+        <!--HomePage End-->
+        <!--Main-Section End-->
+        <!--about-->
+        <div id="about">
+            <div class="color-changer">
+                <div class="color-panel">
+                    <img src="./images/gear.png" alt="">
+                </div>
+                <div class="color-selector">
+                    <div class="heading">Custom Colors</div>
+                    <div class="colors">
+                        <ul>
+                            <li>
+                                <a href="#0" class="color-red " title="color-red"></a>
+                            </li>
+                            <li>
+                                <a href="#0" class="color-purple" title="color-purple"></a>
+                            </li>
+                            <li>
+                                <a href="#0" class="color-malt" title="color-malt"></a>
+                            </li>
+                            <li>
+                                <a href="#0" class="color-green" title="color-green"></a>
+                            </li>
+                            <li>
+                                <a href="#0" class="color-blue" title="color-blue"></a>
+                            </li>
+                            <li>
+                                <a href="#0" class="color-orange" title="color-orange"></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!--about content-->
+            <div id="about-content">
+                <div class="about-header">
+                    About <span class="color">Me</span>
+                    <span class="header-caption">Get to Know <span class="color"> me.</span></span>
+                </div>
+                <div class="about-main">
+                    <div class="about-first-paragraph wow">
+                        <!--about description-->
+                        <span class="about-first-line">
+                            I'm creative
+                            <span class="color">web developer</span>
+                            based in New York , USA </span>
+                        <br>
+                        <span class="about-second-line"> With 20 years of experience as a professional Web developer, I
+                            have acquired the skills and knowledge necessary to make your project a success. I enjoy
+                            every step while working.</span>
+                        <div class="cv">
+                            <a target="_blank" href="./pdf/RajeshChavda.pdf"><button>Download <span class="colors">CV</span></button></a>
+                        </div>
+                    </div>
+                    <!--about picture-->
+                    <div class="about-img">
+                        <img src="./images/about.jpg" alt="Your Image">
+                    </div>
+                </div>
+
+            </div>
+            <!--services start-->
+            <div id="services">
+                <div class="color-changer">
+                    <div class="color-panel">
+                        <img src="./images/gear.png" alt="">
+                    </div>
+                    <div class="color-selector">
+                        <div class="heading">Custom Colors</div>
+                        <div class="colors">
+                            <ul>
+                                <li>
+                                    <a href="#0" class="color-red " title="color-red"></a>
+                                </li>
+                                <li>
+                                    <a href="#0" class="color-purple" title="color-purple"></a>
+                                </li>
+                                <li>
+                                    <a href="#0" class="color-malt" title="color-malt"></a>
+                                </li>
+                                <li>
+                                    <a href="#0" class="color-green" title="color-green"></a>
+                                </li>
+                                <li>
+                                    <a href="#0" class="color-blue" title="color-blue"></a>
+                                </li>
+                                <li>
+                                    <a href="#0" class="color-orange" title="color-orange"></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!--services header-->
+                <div class="services-heading wow">
+                    <span class="color">My</span> Services
+                </div>
+                <!--services header end-->
+                <!--services content-->
+                <div class="services-content">
+                    <div class="service-one service wow">
+                        <div class="service-img">
+                            <img src="./images/coding.png" alt="service-one">
+                        </div>
+                        <div class="service-description">
+                            <h2>Web Designing</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod quibusdam possimus</p>
+                        </div>
+                    </div>
+                    <div class="service-two service wow">
+                        <div class="service-img">
+                            <img src="./images/instagram.png" alt="service-two">
+                        </div>
+                        <div class="service-description">
+                            <h2>Social Media</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod quibusdam possimus</p>
+                        </div>
+                    </div>
+                    <div class="service-three service wow">
+                        <div class="service-img">
+                            <img src="./images/bulb.png" alt="service-three">
+                        </div>
+                        <div class="service-description">
+                            <h2>Creative Design</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod quibusdam possimus</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--services content end-->
+            <!--services end-->
+            <div id="skills">
+                <div class="skills-header">
+                    My <span class="color"> Skills</span>
+                </div>
+                <div class="skills-content " style="text-align: center;">
+                    <div class="skill-html skill">
+                        <div class="skill-text">
+                            <div class="html">
+                                HTML/CSS
+                            </div>
+                        </div>
+                        <div class="html-prog wow prog">
+                            <div class="html-progress wow">95%</div>
+                        </div>
+                    </div>
+                    <div class="skill-html skill">
+                        <div class="skill-text">
+                            <div class="html">
+                                Javascript
+                            </div>
+                        </div>
+                        <div class="html-prog wow prog">
+                            <div class="js-progress wow">90%</div>
+                        </div>
+                    </div>
+                    <div class="skill-html skill">
+                        <div class="skill-text">
+                            <div class="html">
+                                PHP
+                            </div>
+                        </div>
+                        <div class="html-prog wow prog">
+                            <div class="adobe-progress wow">83%</div>
+                        </div>
+                    </div>
+                    <div class="skill-html skill">
+                        <div class="skill-text">
+                            <div class="html">
+                                Vue JS
+                            </div>
+                        </div>
+                        <div class="html-prog wow prog">
+                            <div class="php-progress wow">87%</div>
+                        </div>
+                    </div>
+                    <div class="skill-html skill">
+                        <div class="skill-text">
+                            <div class="html">
+                                JQuery
+                            </div>
+                        </div>
+                        <div class="html-prog wow prog">
+                            <div class="jquery-progress wow">94%</div>
+                        </div>
+                    </div>
+                    <div class="skill-html skill">
+                        <div class="skill-text">
+                            <div class="html">
+                                Angular JS
+                            </div>
+                        </div>
+                        <div class="html-prog wow prog">
+                            <div class="seo-progress wow">84%</div>
+                        </div>
+                    </div>
+                    <div class="skill-html skill">
+                        <div class="skill-text">
+                            <div class="html">
+                                Node JS
+                            </div>
+                        </div>
+                        <div class="html-prog wow prog">
+                            <div class="seo-progress wow">76%</div>
+                        </div>
+                    </div>
+                    <div class="skill-html skill">
+                        <div class="skill-text">
+                            <div class="html">
+                                React JS
+                            </div>
+                        </div>
+                        <div class="html-prog wow prog">
+                            <div class="seo-progress wow">80%</div>
+                        </div>
+                    </div>
+                    <div class="skill-html skill">
+                        <div class="skill-text">
+                            <div class="html">
+                                AWS
+                            </div>
+                        </div>
+                        <div class="html-prog wow prog">
+                            <div class="seo-progress wow">70%</div>
+                        </div>
+                    </div>
+                    <div class="skill-html skill">
+                        <div class="skill-text">
+                            <div class="html">
+                                Firebase
+                            </div>
+                        </div>
+                        <div class="html-prog wow prog">
+                            <div class="seo-progress wow">73%</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--copyright-section You Can Remove After Downloading-->
+            <div class="footer">
+                <div class="footer-text">
+                    <img src="./images/copyright.png" alt="copyright-img" class="images" height="14px"> Chavda Rajesh
+                </div>
+            </div>
+            <!--copyright-section-->
+        </div>
+        <!--about end-->
+        <!--portfolio-->
+        <div id="portfolio">
+            <div class="color-changer">
+                <div class="color-panel">
+                    <img src="./images/gear.png" alt="">
+                </div>
+                <div class="color-selector">
+                    <div class="heading">Custom Colors</div>
+                    <div class="colors">
+                        <ul>
+                            <li>
+                                <a href="#0" class="color-red " title="color-red"></a>
+                            </li>
+                            <li>
+                                <a href="#0" class="color-purple" title="color-purple"></a>
+                            </li>
+                            <li>
+                                <a href="#0" class="color-malt" title="color-malt"></a>
+                            </li>
+                            <li>
+                                <a href="#0" class="color-green" title="color-green"></a>
+                            </li>
+                            <li>
+                                <a href="#0" class="color-blue" title="color-blue"></a>
+                            </li>
+                            <li>
+                                <a href="#0" class="color-orange" title="color-orange"></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="portfolio-header"> <span class="color"> My </span> Portfolio
+                <span class="header-caption"> Some Of My <span class="color"> Works</span></span></div>
+            <div id="portfolio-content">
+                <div class="portfolio portfolio-first">
+                    <div class="portfolio-image">
+                        <img src="./images/portfolio-first.jpg" alt="portfolio-first">
+                    </div>
+                    <div class="portfolio-text">
+                        <h2>Qr Code Generator And Scanner</h2>
+                        <p>QR Code Generator & Scanner is a very simple and useful application which helps you to create your own custom Bar-code image. you can use this bar code image for advertisement, to share information, to become a part of modern world.
+                            This application have both features one is generator and another is scanner. After all we have added a new feature that is you can scan an image by uploading from gallery.</p>
+                        <div class="button"><a href="https://qr-codes-generate.netlify.app/" target="_blank"><button><span class="index"> View Project<i
+                                            class="gg-arrow-right"></i></span></button></a></div>
+                    </div>
+                </div>
+                <div class="portfolio portfolio-second">
+                    <div class="portfolio-image">
+                        <img src="./images/portfolio-second.jpg" alt="portfolio-second">
+                    </div>
+                    <div class="portfolio-text">
+                        <h2>Toss</h2>
+                        <p>Flip A Coin - Online Toss & Coin Flipper: Heads or Tails?</p>
+                        <div class="button"><a target="_blank" href="https://flip-toss.netlify.app"><button><span class="index"> View Project<i
+                                            class="gg-arrow-right"></i></span></button></a></div>
+                    </div>
+                </div>
+
+                <div class="portfolio portfolio-third">
+                    <div class="portfolio-image">
+                        <img src="./images/portfolio-third.jpg" alt="portfolio-third">
+                    </div>
+                    <div class="portfolio-text">
+                        <h2>Internet Speed Test</h2>
+                        <p>Check your Internet speed in under 30 seconds. The speed test usually transfers less than 40 MB of data, but may transfer more data on fast connections.</p>
+                        <div class="button"><a target="_blank" href="https://internet-speed-test.netlify.app"><button><span class="index"> View Project<i
+                                            class="gg-arrow-right"></i></span></button></a></div>
+                    </div>
+                </div>
+                <div class="portfolio portfolio-second">
+                    <div class="portfolio-image">
+                        <img src="./images/portfolio-second.jpg" alt="portfolio-second">
+                    </div>
+                    <div class="portfolio-text">
+                        <h2>Vehicle speedometer</h2>
+                        <p>A Speedometer or speed meter is a gauge that measures and displays the instantaneous speed of a vehicle.</p>
+                        <div class="button"><a target="_blank" href="https://speedo-meter.netlify.app"><button><span class="index"> View Project<i
+                                            class="gg-arrow-right"></i></span></button></a></div>
+                    </div>
+                </div>
+                <div class="portfolio portfolio-fourth">
+                    <div class=" portfolio-image">
+                        <img src="./images/portfolio-fourth.jpg" alt="portfolio-fourth">
+                    </div>
+                    <div class="portfolio-text">
+                        <h2>WP DM</h2>
+                        <p>No Contact App is a simple service that lets you sent a WhatsApp message to any phone number directly, without adding the number to your contacts.</p>
+                        <div class="button"><a target="_blank" href="https://whatsappdm.netlify.app"><button><span class="index"> View Project<i
+                                            class="gg-arrow-right"></i></span></button></a></div>
+                    </div>
+                </div>
+                <div class="portfolio portfolio-first">
+                    <div class=" portfolio-image">
+                        <img src="./images/portfolio-first.jpg" alt="portfolio-first">
+                    </div>
+                    <div class="portfolio-text">
+                        <h2>Screens Shot for Web Browser</h2>
+                        <p>The simplest way to take a full page screenshot of any window.</p>
+                        <div class="button"><a target="_blank" href="https://screens-shot.netlify.app"><button><span class="index"> View Project<i
+                                            class="gg-arrow-right"></i></span></button></a></div>
+                    </div>
+                </div>
+                <div class="portfolio portfolio-second">
+                    <div class="portfolio-image">
+                        <img src="./images/portfolio-second.jpg" alt="portfolio-second">
+                    </div>
+                    <div class="portfolio-text">
+                        <h2>Location Alarm</h2>
+                        <p>Location Alarm / GPS Alarm. Naplarm is a location based reminder app. Just set alarm/reminders all over the map & let Naplarm keep track of when you reach your destination so you can sit back, and relax</p>
+                        <div class="button"><a target="_blank" href="https://location-alarm.netlify.app"><button><span class="index"> View Project<i
+                                            class="gg-arrow-right"></i></span></button></a></div>
+                    </div>
+                </div>
+                <div class="portfolio portfolio-first">
+                    <div class=" portfolio-image">
+                        <img src="./images/portfolio-first.jpg" alt="portfolio-first">
+                    </div>
+                    <div class="portfolio-text">
+                        <h2>Converter Case</h2>
+                        <p>Easily convert text between different letter cases: lower case, UPPER CASE, Sentence case, Capitalized Case, aLtErNaTiNg cAsE and more online</p>
+                        <div class="button"><a target="_blank" href="https://converter-case.netlify.app"><button><span class="index"> View Project<i
+                                            class="gg-arrow-right"></i></span></button></a></div>
+                    </div>
+                </div>
+                <div class="portfolio portfolio-second">
+                    <div class="portfolio-image">
+                        <img src="./images/portfolio-second.jpg" alt="portfolio-second">
+                    </div>
+                    <div class="portfolio-text">
+                        <h2>Rajesh Chavda's Farm</h2>
+                        <p>A Rajesh Chavda farm is a piece of land used to grow crops and/or raise animals for produce.</p>
+                        <div class="button"><a target="_blank" href="https://rajeshchavdafarm.netlify.app/"><button><span class="index"> View Project<i
+                                            class="gg-arrow-right"></i></span></button></a></div>
+                    </div>
+                </div>
+                <div class="portfolio portfolio-second">
+                    <div class="portfolio-image">
+                        <img src="./images/portfolio-second.jpg" alt="portfolio-second">
+                    </div>
+                    <div class="portfolio-text">
+                        <h2>Local Music Player</h2>
+                        <p>Audio player that play local audio files and show audio spectrum.</p>
+                        <div class="button"><a target="_blank" href="https://local-music-player.netlify.app/"><button><span class="index"> View Project<i
+                                            class="gg-arrow-right"></i></span></button></a></div>
+                    </div>
+                </div>
+                <div class="portfolio portfolio-third">
+                    <div class="portfolio-image">
+                        <img src="./images/portfolio-third.jpg" alt="portfolio-third">
+                    </div>
+                    <div class="portfolio-text">
+                        <h2>Drawing Board</h2>
+                        <p>Sketchpad: Free online drawing application for all ages. Create digital artwork to share online and export to popular image formats JPEG, PNG, SVG, and PDF.</p>
+                        <div class="button"><a target="_blank" href="https://drawing-boards.netlify.app/"><button><span class="index"> View Project<i
+                                            class="gg-arrow-right"></i></span></button></a></div>
+                    </div>
+                </div>
+            </div>
+            <!--copyright-section You Can Remove After Downloading-->
+            <div class="footer">
+                <div class="footer-text">
+                    <img src="./images/copyright.png" alt="copyright-img" class="images" height="14px"> Chavda Rajesh
+                </div>
+            </div>
+            <!--copyright-section-->
+        </div>
+        <!--portfolio end-->
+        <!--blog-->
+        <div id="blog">
+            <div class="color-changer">
+                <div class="color-panel">
+                    <img src="./images/gear.png" alt="">
+                </div>
+                <div class="color-selector">
+                    <div class="heading">Custom Colors</div>
+                    <div class="colors">
+                        <ul>
+                            <li>
+                                <a href="#0" class="color-red " title="color-red"></a>
+                            </li>
+                            <li>
+                                <a href="#0" class="color-purple" title="color-purple"></a>
+                            </li>
+                            <li>
+                                <a href="#0" class="color-malt" title="color-malt"></a>
+                            </li>
+                            <li>
+                                <a href="#0" class="color-green" title="color-green"></a>
+                            </li>
+                            <li>
+                                <a href="#0" class="color-blue" title="color-blue"></a>
+                            </li>
+                            <li>
+                                <a href="#0" class="color-orange" title="color-orange"></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="blog-header"> Blogs</span>
+                <span class="header-caption"> My Latest <span class="color"> blog posts.</span></span></div>
+            <div class="blog-content">
+                <div class="blogs">
+                    <a href="#">
+                        <div class="img">
+                            <img src="./images/post-one.jpg" alt="blog-one">
+                            <div class="blog-date">8 May,20</div>
+                        </div>
+                        <div class="blog-text">
+                            <h3>Harleys In Hawaai</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus alias dolore recusandae
+                                illum, corrupti quo
+                                veniam saepe aliquid! Quis voluptates ratione consequuntur vel, perferendis cum
+                                provident? Magnam fugiat voluptas
+                                libero.</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="blogs">
+                    <a href="#">
+                        <div class="img">
+                            <img src="./images/post-two.jpg" alt="blog-two">
+                            <div class="blog-date">16 Jan,20</div>
+                        </div>
+                        <div class="blog-text">
+                            <h3>Key To Be Productive</h3>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt maiores,
+                                recusandae cupiditate ducimus a non tempora, architecto obcaecati eaque ipsum assumenda
+                                harum dolorum iusto tenetur
+                                eius eligendi dolor magnam sit!</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="blogs">
+                    <a href="#">
+                        <div class="img">
+                            <img src="./images/post-three.jpg" alt="blog-three">
+                            <div class="blog-date">30 Nov,19</div>
+                        </div>
+                        <div class="blog-text">
+                            <h3>Caffeine Addict</h3>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nemo nostrum impedit
+                                ipsam perspiciatis ratione sapiente quasi optio reprehenderit, labore consequuntur
+                                suscipit cum quas.
+                                Officiis dolorem asperiores, ut necessitatibus quas doloremque?</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="blogs">
+                    <a href="#">
+                        <div class="img">
+                            <img src="./images/post-four.jpg" alt="blog-four">
+                            <div class="blog-date">6 Jul,19</div>
+                        </div>
+                        <div class="blog-text">
+                            <h3>Web Development</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, veniam ratione quam
+                                vitae,
+                                quibusdam explicabo rem debitis velit ipsa repellat, impedit nulla fuga? Amet corporis
+                                praesentium quae.
+                                Sed, quibusdam necessitatibus.</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="blogs">
+                    <a href="#">
+                        <div class="img">
+                            <img src="./images/post-five.jpg" alt="blog-five">
+                            <div class="blog-date">1 Jun,19</div>
+                        </div>
+                        <div class="blog-text">
+                            <h3>Work From Home</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga sunt eum necessitatibus rem
+                                dignissimos nulla mollitia cumque, provident officiis non vitae? Animi aut doloremque
+                                illum, soluta hic minus
+                                sint explicabo..</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="blogs">
+                    <a href="#">
+                        <div class="img">
+                            <img src="./images/post-six.jpg" alt="blog-six">
+                            <div class="blog-date">28 Feb,19</div>
+                        </div>
+                        <div class="blog-text">
+                            <h3>Business Trip</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo tempora dolorum fuga
+                                ratione, unde,
+                                ex quaerat iste numquam nemo nihil nobis rem sint quia recusandae dignissimos quos ut
+                                rerum nam.</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <!--copyright-section You Can Remove After Downloading-->
+            <div class="footer">
+                <div class="footer-text">
+                    <img src="./images/copyright.png" alt="copyright-img" class="images" height="14px"> Chavda Rajesh
+                </div>
+            </div>
+            <!--copyright-section-->
+        </div>
+        <!--blog end-->
+        <!--contact-->
+        <div id="contact">
+            <div class="color-changer">
+                <div class="color-panel">
+                    <img src="./images/gear.png" alt="">
+                </div>
+                <div class="color-selector">
+                    <div class="heading">Custom Colors</div>
+                    <div class="colors">
+                        <ul>
+                            <li>
+                                <a href="#0" class="color-red " title="color-red"></a>
+                            </li>
+                            <li>
+                                <a href="#0" class="color-purple" title="color-purple"></a>
+                            </li>
+                            <li>
+                                <a href="#0" class="color-malt" title="color-malt"></a>
+                            </li>
+                            <li>
+                                <a href="#0" class="color-green" title="color-green"></a>
+                            </li>
+                            <li>
+                                <a href="#0" class="color-blue" title="color-blue"></a>
+                            </li>
+                            <li>
+                                <a href="#0" class="color-orange" title="color-orange"></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="contact-header">Contact <span class="color"> Me</span>
+                <div class="contact-header-caption"> <span class="color"> Get</span> In Touch.</div>
+            </div>
+            <div class="contact-content">
+                <!--Contact form-->
+                <div class="contact-form">
+                    <div class="form-header">
+                        Message Me
+                    </div>
+                    <form id="myForm" action="#">
+                        <div class="input-line">
+                            <input id="name" type="text" placeholder="Name" class="input-name">
+                            <input id="email" type="email" placeholder="Email" class="input-name">
+                        </div>
+                        <input type="text" id="subject" placeholder="subject" class="input-subject">
+                        <textarea id="body" class="input-textarea" placeholder="message"></textarea>
+                        <button type="button" id="submit" value="send">Submit</button>
+                    </form>
+
+                </div>
+                <!--Contact form-->
+                <!--Contact information-->
+                <div class="contact-info">
+                    <div class="contact-info-header">
+                        Contact Info
+                    </div>
+                    <div class="contact-info-content">
+                        <div class="contect-info-content-line">
+                            <img src="./images/icon-name.png" class="icon" alt="name-icon">
+                            <div class="contact-info-icon-text">
+                                <h6>Name</h6>
+                                <p>Chavda Rajesh</p>
+                            </div>
+                        </div>
+                        <div class="contect-info-content-line">
+                            <img src="./images/icon-location.png" class="icon" alt="location-icon">
+                            <div class="contact-info-icon-text">
+                                <h6>Location</h6>
+                                <p>Porbandar, Gujarat</p>
+                            </div>
+                        </div>
+                        <div class="contect-info-content-line">
+                            <img src="./images/icon-phone.png" class="icon" alt="phone-icon">
+                            <div class="contact-info-icon-text">
+                                <h6>Call</h6>
+                                <p>+918758655670</p>
+                            </div>
+                        </div>
+
+                        <div class="contect-info-content-line">
+                            <img src="./images/icon-email.png" class="icon" alt="email-icon">
+                            <div class="contact-info-icon-text">
+                                <h6>Email</h6>
+                                <p>rajeshchavda625@gmail.com</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Contact information end-->
+                </div>
+            </div>
+            <!--copyright-section You Can Remove After Downloading-->
+            <div class="footer">
+                <div class="footer-text">
+                    <img src="./images/copyright.png" alt="copyright-img" class="images" height="14px"> Chavda Rajesh
+                </div>
+            </div>
+            <!--copyright-section-->
+        </div>
+        <!--contact end-->
+    </div>
+    <!--all the divisions-->
+    <script src="./js/pwa.js"></script>
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/particles.min.js"></script>
+    <script src="./js/index.js"></script>
+    <!-- internet status js -->
+    <script>
+        class Toast {
+            constructor(message, color, time) {
+                this.message = message;
+                this.color = color;
+                this.time = time;
+                this.element = null;
+                var element = document.createElement('div');
+                element.className = "toast-notification";
+                this.element = element;
+                var countElements = document.getElementsByClassName("toast-notification");
+                element.style.opacity = 0.8;
+                element.style.marginTop = (countElements.length * 0) + "px";
+                element.style.backgroundColor = this.color;
+                var message = document.createElement("div");
+                message.className = "message-container";
+                message.textContent = this.message;
+                element.appendChild(message);
+                var close = document.createElement("div");
+                close.className = "close-button";
+                element.append(close);
+                document.body.appendChild(element);
+                setTimeout(function () {
+                    element.remove();
+                }, this.time);
+                close.addEventListener("click", () => {
+                    element.remove();
+                })
+            }
+
+        }
+
+        const ToastType = {
+            Danger: "#eb3b5a",
+            Warning: "#fdcb6e",
+            Succes: "#00b894",
+        }
+
+        let myInterval;
+        function interval() {
+            myInterval = setInterval(checkinternetstatus, 2000);
+            const myTimeout = setTimeout(() => {
+                if (clearInterval) {
+                    clearInterval(myInterval);
+                }
+            }, 10000);
+        }
+        function checkinternetstatus() {
+            if (window.navigator.onLine) {
+                clearInterval(myInterval);
+                new Toast("You are connected to internet", ToastType.Succes, 2500);
+            } else {
+                new Toast('You are offline', ToastType.Danger, 2000);
+            }
+        }
+        window.addEventListener('online', interval);
+        window.addEventListener('offline', interval);
+
+        $( window ).load(function() {
+            if (!window.navigator.onLine) {
+                new Toast('You are offline', ToastType.Danger, 2000);
+                interval()
+            } else {
+                new Toast("You are connected to internet", ToastType.Succes, 2500);
+            }
+        });
+
+    </script>
+
+    <!--particles script-->
+    <script>
+        particlesJS("particles", {
+            "particles": {
+                "number": {
+                    "value": 250,
+                    "density": {
+                        "enable": true,
+                        "value_area": 800
+                    }
+                },
+                "color": {
+                    "value": "#0083f5"
+                },
+                "shape": {
+                    "type": "circle",
+                    "stroke": {
+                        "width": 0,
+                        "color": "#000000"
+                    },
+                    "polygon": {
+                        "nb_sides": 5
+                    },
+                    "image": {
+                        "src": "img/github.svg",
+                        "width": 100,
+                        "height": 100
+                    }
+                },
+                "opacity": {
+                    "value": 0.5,
+                    "random": false,
+                    "anim": {
+                        "enable": false,
+                        "speed": 1,
+                        "opacity_min": 0.1,
+                        "sync": false
+                    }
+                },
+                "size": {
+                    "value": 3,
+                    "random": true,
+                    "anim": {
+                        "enable": false,
+                        "speed": 40,
+                        "size_min": 0.1,
+                        "sync": false
+                    }
+                },
+                "line_linked": {
+                    "enable": true,
+                    "distance": 150,
+                    "color": "#ffffff",
+                    "opacity": 0.4,
+                    "width": 1
+                },
+                "move": {
+                    "enable": true,
+                    "speed": 6,
+                    "direction": "none",
+                    "random": false,
+                    "straight": false,
+                    "out_mode": "out",
+                    "bounce": false,
+                    "attract": {
+                        "enable": false,
+                        "rotateX": 600,
+                        "rotateY": 1200
+                    }
+                }
+            },
+            "interactivity": {
+                "detect_on": "canvas",
+                "events": {
+                    "onhover": {
+                        "enable": true,
+                        "mode": "grab"
+                    },
+                    "onclick": {
+                        "enable": true,
+                        "mode": "push"
+                    },
+                    "resize": true
+                },
+                "modes": {
+                    "grab": {
+                        "distance": 400,
+                        "line_linked": {
+                            "opacity": 1
+                        }
+                    },
+                    "bubble": {
+                        "distance": 400,
+                        "size": 40,
+                        "duration": 2,
+                        "opacity": 8,
+                        "speed": 3
+                    },
+                    "grab": {
+                        "distance": 200,
+                        "duration": 0.4
+                    },
+                    "push": {
+                        "particles_nb": 4
+                    },
+                    "remove": {
+                        "particles_nb": 2
+                    }
+                }
+            },
+            "retina_detect": true
+        });
+    </script>
+
+</body>
+
+</html>
