@@ -33,16 +33,23 @@ const coreAssets = [
     './img/shape2.png',
     './img/shape3.png',
 
-    './images/project-1-big.jpg',
-    './images/project-1.jpg',
-    './images/icon-location.png',
-    './images/icon-name.png',
-    './images/icon-phone.png',
-    './images/instagram_logo.png',
-    './images/instagram.png',
-    './images/linkedin_logo.png',
-    './images/mail.png',
-    './images/man-1.jpg',
+    './img/projects/project-1-big.jpg',
+    './img/projects/project-1.jpg',
+    './img/projects/project-2-big.jpg',
+    './img/projects/project-2.jpg',
+    './img/projects/project-3-big.jpg',
+    './img/projects/project-3.jpg',
+    './img/projects/project-4-big.jpg',
+    './img/projects/project-4.jpg',
+    './img/projects/project-5-big.jpg',
+    './img/projects/project-5.jpg',
+    './img/projects/project-6-big.jpg',
+    './img/projects/project-6.jpg',
+    './img/projects/project-7-big.jpg',
+    './img/projects/project-7.jpg',
+    './img/projects/project-8-big.jpg',
+    './img/projects/project-8.jpg',
+    
 
     './images/man.jpg',
 
@@ -73,6 +80,15 @@ const coreAssets = [
     './fonts/icomoon_avargk.woff',
 
     './pdf/RajeshChavda.pdf',
+    
+    './sounds/click.mp3',
+    './sounds/hover.mp3',
+    './sounds/hover2.mp3',
+    './sounds/hover3.mp3',
+    './sounds/paper.mp3',
+    './sounds/paperaboutdown.mp3',
+    './sounds/paperaboutup.mp3',
+    './sounds/skin.mp3',
 ];
 
 // On install, cache core assets

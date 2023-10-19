@@ -2563,6 +2563,13 @@ body.dark {
 	margin-right: 4px;
 }
 
+.text-decoration-none{
+	text-decoration:none;
+}
+.color-black{
+	color: black;
+}
+
 /* [ RESPONSIVE DESIGN ] */
 /*================================================== */
 
@@ -2964,7 +2971,7 @@ body.dark {
 
 	.home .home-content {
 		min-height: calc(100% - 152px);
-		padding-top: 85px;
+		padding-top: 130px;
 	}
 
 	.home .home-content>div {
@@ -2989,8 +2996,8 @@ body.dark {
 
 	.home .home-content p {
 		max-width: 400px;
-		font-size: 18px;
-		line-height: 32px;
+		font-size: 15px;
+		line-height: 25px;
 	}
 
 	.portfolio-grid ul.grid {
@@ -3236,5 +3243,18 @@ body.dark {
 	.blog-page .meta {
 		flex-direction: column;
 		align-items: flex-start;
+	}
+	
+	.contacts{
+		left: 15px;
+		font-size: 14px;
+	}
+
+	.contacts ul{
+		line-height: 24px;
+	}
+
+	.social ul li a{
+		font-size: 16px;
 	}
 }

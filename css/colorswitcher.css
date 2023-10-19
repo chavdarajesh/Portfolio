@@ -73,18 +73,18 @@
 
 #toggle-switcher {
     display: block;
-    width: 54px;
+    width: 40px;
     background: white;
     position: absolute;
-    right: -54px;
+    right: -40px;
     top: -1px;
     padding: 5px;
     border: 1px solid #ccc;
     border-left: 0;
     cursor: pointer;
     text-align: center;
-    height: 54px;
-    font-size: 30px;
+    height: 40px;
+    font-size: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
