@@ -200,3 +200,17 @@
 //   $("a").hover(cursorhover, cursor);
 //   $(".navigation-close").hover(cursorhover, cursor);
 // });
+
+
+const currentYear = new Date().getFullYear();
+const experienceStartingYear = 2019;
+const experienceYearDifference = currentYear - experienceStartingYear;
+const totalExperienceYearsHome = document.getElementById('total-experience-years-home').innerHTML = experienceYearDifference;
+const totalExperienceYearsAbout = document.getElementById('total-experience-years-about').innerHTML = experienceYearDifference;
+
+const ageStartingYear = 2000;
+const ageYearDifference = currentYear - ageStartingYear;
+const ageAbout = document.getElementById('age-about').innerHTML = ageYearDifference;
+
+
+
