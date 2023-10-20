@@ -19,15 +19,12 @@ const coreAssets = [
     './css/skins/yellow.css',
 
     './js/colorswitcher.js',
-    './js/index.js',
     './js/custom.js',
     './js/pwa.js',
 
     './images/favicon/favicon.ico',
 
-    './img/mypicture-160x160-old.jpg',
     './img/mypicture-160x160.jpg',
-    './img/mypicture-old.jpg',
     './img/mypicture.jpg',
     './img/shape1.png',
     './img/shape2.png',
@@ -55,16 +52,17 @@ const coreAssets = [
 
     './images/RC_Logo_Black.png',
     './images/RC_Logo_White.png',
-    './images/manifest/bulb-icon.svg',
-    './images/manifest/contact-icon.svg',
+
     './images/manifest/email-icon.svg',
     './images/manifest/home-icon.svg',
     './images/manifest/icon-96x96.png',
     './images/manifest/icon-192x192.png',
     './images/manifest/icon-512x512.png',
     './images/manifest/icon-512x512.svg',
+
     './images/manifest/main.png',
     './images/manifest/port-icon.svg',
+
     './images/manifest/SSn1.png',
     './images/manifest/SSn2.png',
     './images/manifest/SSn3.png',
@@ -80,6 +78,7 @@ const coreAssets = [
     './fonts/icomoon_avargk.woff',
 
     './pdf/RajeshChavda.pdf',
+    './pdf/Rajesh Chavda.pdf',
     
     './sounds/click.mp3',
     './sounds/hover.mp3',

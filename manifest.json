@@ -41,7 +41,7 @@
         {
             "name": "About",
             "description": "About Rajesh Chavda",
-            "url": "/?url=about-link",
+            "url": "/?url=open-about",
             "icons": [
                 {
                     "src": "./images/manifest/email-icon.svg",
@@ -54,7 +54,7 @@
             "name": "Portfolio",
             "short_name": "Portfolio",
             "description": "Rajesh Chavda's Portfolio",
-            "url": "/?url=portfolio-link",
+            "url": "/?url=open-portfolio",
             "icons": [
                 {
                     "src": "./images/manifest/port-icon.svg",
@@ -77,21 +77,21 @@
             "sizes": "1920x871",
             "type": "image/png",
             "form_factor": "wide",
-            "label": "I'm a Freelancer"
+            "label": "About Me"
         },
         {
             "src": "./images/manifest/SSw3.png",
             "sizes": "1920x871",
             "type": "image/png",
             "form_factor": "wide",
-            "label": "I'm a Freelancer"
+            "label": "Portfolio"
         },
         {
             "src": "./images/manifest/SSw4.png",
             "sizes": "1920x871",
             "type": "image/png",
             "form_factor": "wide",
-            "label": "I'm a Freelancer"
+            "label": "Project"
         },
         {
             "src": "./images/manifest/SSn1.png",
@@ -105,21 +105,21 @@
             "sizes": "465x774",
             "type": "image/png",
             "form_factor": "narrow",
-            "label": "I'm a Freelancer"
+            "label": "About Me"
         },
         {
             "src": "./images/manifest/SSn3.png",
             "sizes": "465x774",
             "type": "image/png",
             "form_factor": "narrow",
-            "label": "I'm a Freelancer"
+            "label": "Portfolio"
         },
         {
             "src": "./images/manifest/SSn4.png",
             "sizes": "465x774",
             "type": "image/png",
             "form_factor": "narrow",
-            "label": "I'm a Freelancer"
+            "label": "Project"
         }
     ]
 }

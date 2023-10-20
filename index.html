@@ -20,7 +20,21 @@
       <!-- Main CSS File -->
       <link rel="stylesheet" type="text/css" href="css/style.css">
       <!-- Main Color File -->
-      <link rel="stylesheet" type="text/css" href="css/skins/green.css">
+      <script>
+         const ThemeColourLocalStorageValue = localStorage.getItem("theme_colour");
+         if (ThemeColourLocalStorageValue) {
+             let index_css_link = document.createElement('link');
+             index_css_link.href = 'css/skins/' + ThemeColourLocalStorageValue + '.css';
+             index_css_link.rel = 'stylesheet';
+             document.getElementsByTagName('head')[0].appendChild(index_css_link);
+         } else {
+             localStorage.setItem("theme_colour", 'green');
+             let index_css_link = document.createElement('link');
+             index_css_link.href = 'css/skins/green.css';
+             index_css_link.rel = 'stylesheet';
+             document.getElementsByTagName('head')[0].appendChild(index_css_link);
+            }
+            </script>
       <!-- Color Switcher - Only Demo -->
       <link rel="stylesheet" type="text/css" href="css/colorswitcher.css">
 
@@ -28,6 +42,7 @@
     <link rel="apple-touch-icon" href="./images/manifest/main.png">
    </head>
    <body class="sound-on">
+      <div class="cursor"></div>
        <!-- Color Switcher Starts / Only Demo -->
        <div id="switcher" class="switcher">
          <p>Color Switcher
@@ -186,7 +201,7 @@
                <li class="item" onclick="openItem(this)">
                   <img src="img/projects/project-1.jpg" alt="">
                   <div class="title">
-                     <span>London</span>
+                     <span>Morden Shop</span>
                   </div>
                </li>
                <!-- Portfolio Single Item Ends -->
