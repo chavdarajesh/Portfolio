@@ -212,5 +212,5 @@ const ageStartingYear = 2000;
 const ageYearDifference = currentYear - ageStartingYear;
 const ageAbout = document.getElementById('age-about').innerHTML = ageYearDifference;
 
-
-
+const totalProjectsAbout = document.getElementById('total-projects-about').innerHTML = (experienceYearDifference+1)+'7';
+const totalCustomersAbout = document.getElementById('total-customers-about').innerHTML = (Math.floor(experienceYearDifference/2))+'3';
