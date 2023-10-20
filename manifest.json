@@ -99,6 +99,27 @@
             "type": "image/png",
             "form_factor": "narrow",
             "label": "I'm a Freelancer"
+        },
+        {
+            "src": "./images/manifest/SSn2.png",
+            "sizes": "465x774",
+            "type": "image/png",
+            "form_factor": "narrow",
+            "label": "I'm a Freelancer"
+        },
+        {
+            "src": "./images/manifest/SSn3.png",
+            "sizes": "465x774",
+            "type": "image/png",
+            "form_factor": "narrow",
+            "label": "I'm a Freelancer"
+        },
+        {
+            "src": "./images/manifest/SSn4.png",
+            "sizes": "465x774",
+            "type": "image/png",
+            "form_factor": "narrow",
+            "label": "I'm a Freelancer"
         }
     ]
 }
